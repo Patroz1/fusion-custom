@@ -1,0 +1,1061 @@
+{
+  "exportType": "fusionWidgets",
+  "exportVersion": 1,
+  "requiredAddons": [
+    "https://aiometadatafortheweebs.midnightignite.me/stremio/3ab2d1a2-e850-424a-b855-40829231f1f4/manifest.json"
+  ],
+  "widgets": [
+    {
+      "id": "collection.e00ab5a6-e242-44ea-8a0b-63909220338b",
+      "title": "Servizi di streaming",
+      "type": "collection.row",
+      "dataSource": {
+        "kind": "collection",
+        "payload": {
+          "items": [
+            {
+              "id": "49b83041-cb98-4d7d-8429-aa410723a444",
+              "title": "Netflix",
+              "hideTitle": false,
+              "imageAspect": "wide",
+              "dataSources": [
+                {
+                  "kind": "addonCatalog",
+                  "payload": {
+                    "addonId": "https://aiometadatafortheweebs.midnightignite.me/stremio/3ab2d1a2-e850-424a-b855-40829231f1f4/manifest.json",
+                    "catalogId": "movie::tmdb.discover.movie.streaming_netflix_8_0.mu2woofc",
+                    "type": "movie",
+                    "aiometadata": {
+                      "version": 1,
+                      "catalog": {
+                        "id": "tmdb.discover.movie.streaming_netflix_8_0.mu2woofc",
+                        "type": "movie",
+                        "name": "Netflix",
+                        "source": "tmdb",
+                        "enabled": true,
+                        "showInHome": true,
+                        "metadata": {
+                          "discover": {
+                            "version": 2,
+                            "source": "tmdb",
+                            "mediaType": "movie",
+                            "params": {
+                              "sort_by": "popularity.desc",
+                              "include_adult": false,
+                              "watch_region": "IT",
+                              "with_watch_providers": "8",
+                              "with_watch_monetization_types": "flatrate|free|ads|rent|buy",
+                              "vote_count.gte": 10,
+                              "primary_release_date.gte": "__tmdb_date__:last_10_years:from",
+                              "primary_release_date.lte": "__tmdb_date__:last_10_years:to",
+                              "with_release_type": "4|5|6",
+                              "release_date.lte": "__tmdb_date__:today:to"
+                            },
+                            "formState": {
+                              "catalogName": "Netflix",
+                              "discoverSource": "tmdb",
+                              "catalogType": "movie",
+                              "tmdbMediaType": "movie",
+                              "sortBy": "popularity.desc",
+                              "includeAdult": false,
+                              "releasedOnly": true,
+                              "watchRegion": "IT",
+                              "watchProviders": [
+                                {
+                                  "id": 8,
+                                  "label": "Netflix"
+                                }
+                              ],
+                              "providerJoinMode": "or",
+                              "voteCountMin": 10,
+                              "primaryReleaseFrom": "2016-09-15",
+                              "primaryReleaseTo": "2026-09-15",
+                              "movieDatePreset": "last_10_years"
+                            }
+                          },
+                          "description": "TMDB Discover (movie)",
+                          "url": "https://www.themoviedb.org/discover/movie?sort_by=popularity.desc&include_adult=false&watch_region=IT&with_watch_providers=8&with_watch_monetization_types=flatrate%7Cfree%7Cads%7Crent%7Cbuy&vote_count.gte=10&primary_release_date.gte=2016-09-15&primary_release_date.lte=2026-09-15&with_release_type=4%7C5%7C6&release_date.lte=2026-09-15"
+                        }
+                      }
+                    }
+                  }
+                },
+                {
+                  "kind": "addonCatalog",
+                  "payload": {
+                    "addonId": "https://aiometadatafortheweebs.midnightignite.me/stremio/3ab2d1a2-e850-424a-b855-40829231f1f4/manifest.json",
+                    "catalogId": "series::tmdb.discover.series.streaming_netflix_8_0.mu2woofc",
+                    "type": "series",
+                    "aiometadata": {
+                      "version": 1,
+                      "catalog": {
+                        "id": "tmdb.discover.series.streaming_netflix_8_0.mu2woofc",
+                        "type": "series",
+                        "name": "Netflix",
+                        "source": "tmdb",
+                        "enabled": true,
+                        "showInHome": true,
+                        "metadata": {
+                          "discover": {
+                            "version": 2,
+                            "source": "tmdb",
+                            "mediaType": "tv",
+                            "params": {
+                              "sort_by": "popularity.desc",
+                              "include_adult": false,
+                              "watch_region": "IT",
+                              "with_watch_providers": "8",
+                              "with_watch_monetization_types": "flatrate|free|ads|rent|buy",
+                              "vote_count.gte": 10,
+                              "first_air_date.gte": "__tmdb_date__:last_10_years:from",
+                              "first_air_date.lte": "__tmdb_date__:last_10_years:to",
+                              "with_status": "0|3|4|5"
+                            },
+                            "formState": {
+                              "catalogName": "Netflix",
+                              "discoverSource": "tmdb",
+                              "catalogType": "series",
+                              "tmdbMediaType": "tv",
+                              "sortBy": "popularity.desc",
+                              "includeAdult": false,
+                              "releasedOnly": true,
+                              "watchRegion": "IT",
+                              "watchProviders": [
+                                {
+                                  "id": 8,
+                                  "label": "Netflix"
+                                }
+                              ],
+                              "providerJoinMode": "or",
+                              "voteCountMin": 10,
+                              "firstAirFrom": "2016-09-15",
+                              "firstAirTo": "2026-09-15",
+                              "seriesDatePreset": "last_10_years"
+                            }
+                          },
+                          "description": "TMDB Discover (tv)",
+                          "url": "https://www.themoviedb.org/discover/tv?sort_by=popularity.desc&include_adult=false&watch_region=IT&with_watch_providers=8&with_watch_monetization_types=flatrate%7Cfree%7Cads%7Crent%7Cbuy&vote_count.gte=10&first_air_date.gte=2016-09-15&first_air_date.lte=2026-09-15&with_status=0%7C3%7C4%7C5"
+                        }
+                      }
+                    }
+                  }
+                }
+              ],
+              "imageURL": "https://raw.githubusercontent.com/Patroz1/fusion-custom/main/Netflix-wide.png?v=2"
+            },
+            {
+              "id": "581524f4-b8a7-48bb-92b4-febefec3ac60",
+              "title": "Disney+",
+              "hideTitle": false,
+              "imageAspect": "wide",
+              "dataSources": [
+                {
+                  "kind": "addonCatalog",
+                  "payload": {
+                    "addonId": "https://aiometadatafortheweebs.midnightignite.me/stremio/3ab2d1a2-e850-424a-b855-40829231f1f4/manifest.json",
+                    "catalogId": "movie::tmdb.discover.movie.streaming_disney_337_2.mu2woofc",
+                    "type": "movie",
+                    "aiometadata": {
+                      "version": 1,
+                      "catalog": {
+                        "id": "tmdb.discover.movie.streaming_disney_337_2.mu2woofc",
+                        "type": "movie",
+                        "name": "Disney+",
+                        "source": "tmdb",
+                        "enabled": true,
+                        "showInHome": true,
+                        "metadata": {
+                          "discover": {
+                            "version": 2,
+                            "source": "tmdb",
+                            "mediaType": "movie",
+                            "params": {
+                              "sort_by": "popularity.desc",
+                              "include_adult": false,
+                              "watch_region": "IT",
+                              "with_watch_providers": "337",
+                              "with_watch_monetization_types": "flatrate|free|ads|rent|buy",
+                              "vote_count.gte": 10,
+                              "primary_release_date.gte": "__tmdb_date__:last_10_years:from",
+                              "primary_release_date.lte": "__tmdb_date__:last_10_years:to",
+                              "with_release_type": "4|5|6",
+                              "release_date.lte": "__tmdb_date__:today:to"
+                            },
+                            "formState": {
+                              "catalogName": "Disney+",
+                              "discoverSource": "tmdb",
+                              "catalogType": "movie",
+                              "tmdbMediaType": "movie",
+                              "sortBy": "popularity.desc",
+                              "includeAdult": false,
+                              "releasedOnly": true,
+                              "watchRegion": "IT",
+                              "watchProviders": [
+                                {
+                                  "id": 337,
+                                  "label": "Disney Plus"
+                                }
+                              ],
+                              "providerJoinMode": "or",
+                              "voteCountMin": 10,
+                              "primaryReleaseFrom": "2016-09-15",
+                              "primaryReleaseTo": "2026-09-15",
+                              "movieDatePreset": "last_10_years"
+                            }
+                          },
+                          "description": "TMDB Discover (movie)",
+                          "url": "https://www.themoviedb.org/discover/movie?sort_by=popularity.desc&include_adult=false&watch_region=IT&with_watch_providers=337&with_watch_monetization_types=flatrate%7Cfree%7Cads%7Crent%7Cbuy&vote_count.gte=10&primary_release_date.gte=2016-09-15&primary_release_date.lte=2026-09-15&with_release_type=4%7C5%7C6&release_date.lte=2026-09-15"
+                        }
+                      }
+                    }
+                  }
+                },
+                {
+                  "kind": "addonCatalog",
+                  "payload": {
+                    "addonId": "https://aiometadatafortheweebs.midnightignite.me/stremio/3ab2d1a2-e850-424a-b855-40829231f1f4/manifest.json",
+                    "catalogId": "series::tmdb.discover.series.streaming_disney_337_2.mu2woofc",
+                    "type": "series",
+                    "aiometadata": {
+                      "version": 1,
+                      "catalog": {
+                        "id": "tmdb.discover.series.streaming_disney_337_2.mu2woofc",
+                        "type": "series",
+                        "name": "Disney+",
+                        "source": "tmdb",
+                        "enabled": true,
+                        "showInHome": true,
+                        "metadata": {
+                          "discover": {
+                            "version": 2,
+                            "source": "tmdb",
+                            "mediaType": "tv",
+                            "params": {
+                              "sort_by": "popularity.desc",
+                              "include_adult": false,
+                              "watch_region": "IT",
+                              "with_watch_providers": "337",
+                              "with_watch_monetization_types": "flatrate|free|ads|rent|buy",
+                              "vote_count.gte": 10,
+                              "first_air_date.gte": "__tmdb_date__:last_10_years:from",
+                              "first_air_date.lte": "__tmdb_date__:last_10_years:to",
+                              "with_status": "0|3|4|5"
+                            },
+                            "formState": {
+                              "catalogName": "Disney+",
+                              "discoverSource": "tmdb",
+                              "catalogType": "series",
+                              "tmdbMediaType": "tv",
+                              "sortBy": "popularity.desc",
+                              "includeAdult": false,
+                              "releasedOnly": true,
+                              "watchRegion": "IT",
+                              "watchProviders": [
+                                {
+                                  "id": 337,
+                                  "label": "Disney Plus"
+                                }
+                              ],
+                              "providerJoinMode": "or",
+                              "voteCountMin": 10,
+                              "firstAirFrom": "2016-09-15",
+                              "firstAirTo": "2026-09-15",
+                              "seriesDatePreset": "last_10_years"
+                            }
+                          },
+                          "description": "TMDB Discover (tv)",
+                          "url": "https://www.themoviedb.org/discover/tv?sort_by=popularity.desc&include_adult=false&watch_region=IT&with_watch_providers=337&with_watch_monetization_types=flatrate%7Cfree%7Cads%7Crent%7Cbuy&vote_count.gte=10&first_air_date.gte=2016-09-15&first_air_date.lte=2026-09-15&with_status=0%7C3%7C4%7C5"
+                        }
+                      }
+                    }
+                  }
+                }
+              ],
+              "imageURL": "https://raw.githubusercontent.com/Patroz1/fusion-custom/main/Disney+-wide.png?v=2"
+            },
+            {
+              "id": "0368a255-e9cb-4e86-931e-a0479e1d12d5",
+              "title": "HBO Max",
+              "hideTitle": false,
+              "imageAspect": "wide",
+              "dataSources": [
+                {
+                  "kind": "addonCatalog",
+                  "payload": {
+                    "addonId": "https://aiometadatafortheweebs.midnightignite.me/stremio/3ab2d1a2-e850-424a-b855-40829231f1f4/manifest.json",
+                    "catalogId": "movie::tmdb.discover.movie.streaming_hbo_max_1899_1.mu2woofc",
+                    "type": "movie",
+                    "aiometadata": {
+                      "version": 1,
+                      "catalog": {
+                        "id": "tmdb.discover.movie.streaming_hbo_max_1899_1.mu2woofc",
+                        "type": "movie",
+                        "name": "HBO Max",
+                        "source": "tmdb",
+                        "enabled": true,
+                        "showInHome": true,
+                        "metadata": {
+                          "discover": {
+                            "version": 2,
+                            "source": "tmdb",
+                            "mediaType": "movie",
+                            "params": {
+                              "sort_by": "popularity.desc",
+                              "include_adult": false,
+                              "watch_region": "IT",
+                              "with_watch_providers": "1899",
+                              "with_watch_monetization_types": "flatrate|free|ads|rent|buy",
+                              "vote_count.gte": 10,
+                              "primary_release_date.gte": "__tmdb_date__:last_10_years:from",
+                              "primary_release_date.lte": "__tmdb_date__:last_10_years:to",
+                              "with_release_type": "4|5|6",
+                              "release_date.lte": "__tmdb_date__:today:to"
+                            },
+                            "formState": {
+                              "catalogName": "HBO Max",
+                              "discoverSource": "tmdb",
+                              "catalogType": "movie",
+                              "tmdbMediaType": "movie",
+                              "sortBy": "popularity.desc",
+                              "includeAdult": false,
+                              "releasedOnly": true,
+                              "watchRegion": "IT",
+                              "watchProviders": [
+                                {
+                                  "id": 1899,
+                                  "label": "HBO Max"
+                                }
+                              ],
+                              "providerJoinMode": "or",
+                              "voteCountMin": 10,
+                              "primaryReleaseFrom": "2016-09-15",
+                              "primaryReleaseTo": "2026-09-15",
+                              "movieDatePreset": "last_10_years"
+                            }
+                          },
+                          "description": "TMDB Discover (movie)",
+                          "url": "https://www.themoviedb.org/discover/movie?sort_by=popularity.desc&include_adult=false&watch_region=IT&with_watch_providers=1899&with_watch_monetization_types=flatrate%7Cfree%7Cads%7Crent%7Cbuy&vote_count.gte=10&primary_release_date.gte=2016-09-15&primary_release_date.lte=2026-09-15&with_release_type=4%7C5%7C6&release_date.lte=2026-09-15"
+                        }
+                      }
+                    }
+                  }
+                },
+                {
+                  "kind": "addonCatalog",
+                  "payload": {
+                    "addonId": "https://aiometadatafortheweebs.midnightignite.me/stremio/3ab2d1a2-e850-424a-b855-40829231f1f4/manifest.json",
+                    "catalogId": "series::tmdb.discover.series.streaming_hbo_max_1899_1.mu2woofc",
+                    "type": "series",
+                    "aiometadata": {
+                      "version": 1,
+                      "catalog": {
+                        "id": "tmdb.discover.series.streaming_hbo_max_1899_1.mu2woofc",
+                        "type": "series",
+                        "name": "HBO Max",
+                        "source": "tmdb",
+                        "enabled": true,
+                        "showInHome": true,
+                        "metadata": {
+                          "discover": {
+                            "version": 2,
+                            "source": "tmdb",
+                            "mediaType": "tv",
+                            "params": {
+                              "sort_by": "popularity.desc",
+                              "include_adult": false,
+                              "watch_region": "IT",
+                              "with_watch_providers": "1899",
+                              "with_watch_monetization_types": "flatrate|free|ads|rent|buy",
+                              "vote_count.gte": 10,
+                              "first_air_date.gte": "__tmdb_date__:last_10_years:from",
+                              "first_air_date.lte": "__tmdb_date__:last_10_years:to",
+                              "with_status": "0|3|4|5"
+                            },
+                            "formState": {
+                              "catalogName": "HBO Max",
+                              "discoverSource": "tmdb",
+                              "catalogType": "series",
+                              "tmdbMediaType": "tv",
+                              "sortBy": "popularity.desc",
+                              "includeAdult": false,
+                              "releasedOnly": true,
+                              "watchRegion": "IT",
+                              "watchProviders": [
+                                {
+                                  "id": 1899,
+                                  "label": "HBO Max"
+                                }
+                              ],
+                              "providerJoinMode": "or",
+                              "voteCountMin": 10,
+                              "firstAirFrom": "2016-09-15",
+                              "firstAirTo": "2026-09-15",
+                              "seriesDatePreset": "last_10_years"
+                            }
+                          },
+                          "description": "TMDB Discover (tv)",
+                          "url": "https://www.themoviedb.org/discover/tv?sort_by=popularity.desc&include_adult=false&watch_region=IT&with_watch_providers=1899&with_watch_monetization_types=flatrate%7Cfree%7Cads%7Crent%7Cbuy&vote_count.gte=10&first_air_date.gte=2016-09-15&first_air_date.lte=2026-09-15&with_status=0%7C3%7C4%7C5"
+                        }
+                      }
+                    }
+                  }
+                }
+              ],
+              "imageURL": "https://raw.githubusercontent.com/Patroz1/fusion-custom/main/HBO-Max-wide.png?v=2"
+            },
+            {
+              "id": "4084c14e-31cb-4c13-8919-de4f8083dfe2",
+              "title": "Prime Video",
+              "hideTitle": false,
+              "imageAspect": "wide",
+              "dataSources": [
+                {
+                  "kind": "addonCatalog",
+                  "payload": {
+                    "addonId": "https://aiometadatafortheweebs.midnightignite.me/stremio/3ab2d1a2-e850-424a-b855-40829231f1f4/manifest.json",
+                    "catalogId": "movie::tmdb.discover.movie.streaming_amazon_prime_video_119_5.mu2woofc",
+                    "type": "movie",
+                    "aiometadata": {
+                      "version": 1,
+                      "catalog": {
+                        "id": "tmdb.discover.movie.streaming_amazon_prime_video_119_5.mu2woofc",
+                        "type": "movie",
+                        "name": "Amazon Prime Video",
+                        "source": "tmdb",
+                        "enabled": true,
+                        "showInHome": true,
+                        "metadata": {
+                          "discover": {
+                            "version": 2,
+                            "source": "tmdb",
+                            "mediaType": "movie",
+                            "params": {
+                              "sort_by": "popularity.desc",
+                              "include_adult": false,
+                              "watch_region": "IT",
+                              "with_watch_providers": "119",
+                              "with_watch_monetization_types": "flatrate|free|ads|rent|buy",
+                              "vote_count.gte": 10,
+                              "primary_release_date.gte": "__tmdb_date__:last_10_years:from",
+                              "primary_release_date.lte": "__tmdb_date__:last_10_years:to",
+                              "with_release_type": "4|5|6",
+                              "release_date.lte": "__tmdb_date__:today:to"
+                            },
+                            "formState": {
+                              "catalogName": "Amazon Prime Video",
+                              "discoverSource": "tmdb",
+                              "catalogType": "movie",
+                              "tmdbMediaType": "movie",
+                              "sortBy": "popularity.desc",
+                              "includeAdult": false,
+                              "releasedOnly": true,
+                              "watchRegion": "IT",
+                              "watchProviders": [
+                                {
+                                  "id": 119,
+                                  "label": "Amazon Prime Video"
+                                }
+                              ],
+                              "providerJoinMode": "or",
+                              "voteCountMin": 10,
+                              "primaryReleaseFrom": "2016-09-15",
+                              "primaryReleaseTo": "2026-09-15",
+                              "movieDatePreset": "last_10_years"
+                            }
+                          },
+                          "description": "TMDB Discover (movie)",
+                          "url": "https://www.themoviedb.org/discover/movie?sort_by=popularity.desc&include_adult=false&watch_region=IT&with_watch_providers=119&with_watch_monetization_types=flatrate%7Cfree%7Cads%7Crent%7Cbuy&vote_count.gte=10&primary_release_date.gte=2016-09-15&primary_release_date.lte=2026-09-15&with_release_type=4%7C5%7C6&release_date.lte=2026-09-15"
+                        }
+                      }
+                    }
+                  }
+                },
+                {
+                  "kind": "addonCatalog",
+                  "payload": {
+                    "addonId": "https://aiometadatafortheweebs.midnightignite.me/stremio/3ab2d1a2-e850-424a-b855-40829231f1f4/manifest.json",
+                    "catalogId": "series::tmdb.discover.series.streaming_amazon_prime_video_119_5.mu2woofc",
+                    "type": "series",
+                    "aiometadata": {
+                      "version": 1,
+                      "catalog": {
+                        "id": "tmdb.discover.series.streaming_amazon_prime_video_119_5.mu2woofc",
+                        "type": "series",
+                        "name": "Amazon Prime Video",
+                        "source": "tmdb",
+                        "enabled": true,
+                        "showInHome": true,
+                        "metadata": {
+                          "discover": {
+                            "version": 2,
+                            "source": "tmdb",
+                            "mediaType": "tv",
+                            "params": {
+                              "sort_by": "popularity.desc",
+                              "include_adult": false,
+                              "watch_region": "IT",
+                              "with_watch_providers": "119",
+                              "with_watch_monetization_types": "flatrate|free|ads|rent|buy",
+                              "vote_count.gte": 10,
+                              "first_air_date.gte": "__tmdb_date__:last_10_years:from",
+                              "first_air_date.lte": "__tmdb_date__:last_10_years:to",
+                              "with_status": "0|3|4|5"
+                            },
+                            "formState": {
+                              "catalogName": "Amazon Prime Video",
+                              "discoverSource": "tmdb",
+                              "catalogType": "series",
+                              "tmdbMediaType": "tv",
+                              "sortBy": "popularity.desc",
+                              "includeAdult": false,
+                              "releasedOnly": true,
+                              "watchRegion": "IT",
+                              "watchProviders": [
+                                {
+                                  "id": 119,
+                                  "label": "Amazon Prime Video"
+                                }
+                              ],
+                              "providerJoinMode": "or",
+                              "voteCountMin": 10,
+                              "firstAirFrom": "2016-09-15",
+                              "firstAirTo": "2026-09-15",
+                              "seriesDatePreset": "last_10_years"
+                            }
+                          },
+                          "description": "TMDB Discover (tv)",
+                          "url": "https://www.themoviedb.org/discover/tv?sort_by=popularity.desc&include_adult=false&watch_region=IT&with_watch_providers=119&with_watch_monetization_types=flatrate%7Cfree%7Cads%7Crent%7Cbuy&vote_count.gte=10&first_air_date.gte=2016-09-15&first_air_date.lte=2026-09-15&with_status=0%7C3%7C4%7C5"
+                        }
+                      }
+                    }
+                  }
+                }
+              ],
+              "imageURL": "https://raw.githubusercontent.com/Patroz1/fusion-custom/main/Prime-Video-wide.png?v=2"
+            },
+            {
+              "id": "fea27063-84c3-4adc-8302-c1f2527f2e76",
+              "title": "Apple TV",
+              "hideTitle": false,
+              "imageAspect": "wide",
+              "dataSources": [
+                {
+                  "kind": "addonCatalog",
+                  "payload": {
+                    "addonId": "https://aiometadatafortheweebs.midnightignite.me/stremio/3ab2d1a2-e850-424a-b855-40829231f1f4/manifest.json",
+                    "catalogId": "movie::tmdb.discover.movie.streaming_apple_tv_350_3.mu2woofc",
+                    "type": "movie",
+                    "aiometadata": {
+                      "version": 1,
+                      "catalog": {
+                        "id": "tmdb.discover.movie.streaming_apple_tv_350_3.mu2woofc",
+                        "type": "movie",
+                        "name": "Apple TV",
+                        "source": "tmdb",
+                        "enabled": true,
+                        "showInHome": true,
+                        "metadata": {
+                          "discover": {
+                            "version": 2,
+                            "source": "tmdb",
+                            "mediaType": "movie",
+                            "params": {
+                              "sort_by": "popularity.desc",
+                              "include_adult": false,
+                              "watch_region": "IT",
+                              "with_watch_providers": "350",
+                              "with_watch_monetization_types": "flatrate|free|ads|rent|buy",
+                              "vote_count.gte": 10,
+                              "primary_release_date.gte": "__tmdb_date__:last_10_years:from",
+                              "primary_release_date.lte": "__tmdb_date__:last_10_years:to",
+                              "with_release_type": "4|5|6",
+                              "release_date.lte": "__tmdb_date__:today:to"
+                            },
+                            "formState": {
+                              "catalogName": "Apple TV",
+                              "discoverSource": "tmdb",
+                              "catalogType": "movie",
+                              "tmdbMediaType": "movie",
+                              "sortBy": "popularity.desc",
+                              "includeAdult": false,
+                              "releasedOnly": true,
+                              "watchRegion": "IT",
+                              "watchProviders": [
+                                {
+                                  "id": 350,
+                                  "label": "Apple TV"
+                                }
+                              ],
+                              "providerJoinMode": "or",
+                              "voteCountMin": 10,
+                              "primaryReleaseFrom": "2016-09-15",
+                              "primaryReleaseTo": "2026-09-15",
+                              "movieDatePreset": "last_10_years"
+                            }
+                          },
+                          "description": "TMDB Discover (movie)",
+                          "url": "https://www.themoviedb.org/discover/movie?sort_by=popularity.desc&include_adult=false&watch_region=IT&with_watch_providers=350&with_watch_monetization_types=flatrate%7Cfree%7Cads%7Crent%7Cbuy&vote_count.gte=10&primary_release_date.gte=2016-09-15&primary_release_date.lte=2026-09-15&with_release_type=4%7C5%7C6&release_date.lte=2026-09-15"
+                        }
+                      }
+                    }
+                  }
+                },
+                {
+                  "kind": "addonCatalog",
+                  "payload": {
+                    "addonId": "https://aiometadatafortheweebs.midnightignite.me/stremio/3ab2d1a2-e850-424a-b855-40829231f1f4/manifest.json",
+                    "catalogId": "series::tmdb.discover.series.streaming_apple_tv_350_3.mu2woofc",
+                    "type": "series",
+                    "aiometadata": {
+                      "version": 1,
+                      "catalog": {
+                        "id": "tmdb.discover.series.streaming_apple_tv_350_3.mu2woofc",
+                        "type": "series",
+                        "name": "Apple TV",
+                        "source": "tmdb",
+                        "enabled": true,
+                        "showInHome": true,
+                        "metadata": {
+                          "discover": {
+                            "version": 2,
+                            "source": "tmdb",
+                            "mediaType": "tv",
+                            "params": {
+                              "sort_by": "popularity.desc",
+                              "include_adult": false,
+                              "watch_region": "IT",
+                              "with_watch_providers": "350",
+                              "with_watch_monetization_types": "flatrate|free|ads|rent|buy",
+                              "vote_count.gte": 10,
+                              "first_air_date.gte": "__tmdb_date__:last_10_years:from",
+                              "first_air_date.lte": "__tmdb_date__:last_10_years:to",
+                              "with_status": "0|3|4|5"
+                            },
+                            "formState": {
+                              "catalogName": "Apple TV",
+                              "discoverSource": "tmdb",
+                              "catalogType": "series",
+                              "tmdbMediaType": "tv",
+                              "sortBy": "popularity.desc",
+                              "includeAdult": false,
+                              "releasedOnly": true,
+                              "watchRegion": "IT",
+                              "watchProviders": [
+                                {
+                                  "id": 350,
+                                  "label": "Apple TV"
+                                }
+                              ],
+                              "providerJoinMode": "or",
+                              "voteCountMin": 10,
+                              "firstAirFrom": "2016-09-15",
+                              "firstAirTo": "2026-09-15",
+                              "seriesDatePreset": "last_10_years"
+                            }
+                          },
+                          "description": "TMDB Discover (tv)",
+                          "url": "https://www.themoviedb.org/discover/tv?sort_by=popularity.desc&include_adult=false&watch_region=IT&with_watch_providers=350&with_watch_monetization_types=flatrate%7Cfree%7Cads%7Crent%7Cbuy&vote_count.gte=10&first_air_date.gte=2016-09-15&first_air_date.lte=2026-09-15&with_status=0%7C3%7C4%7C5"
+                        }
+                      }
+                    }
+                  }
+                }
+              ],
+              "imageURL": "https://raw.githubusercontent.com/Patroz1/fusion-custom/main/Apple-TV-wide.png?v=2"
+            },
+            {
+              "id": "22e11a05-f0fe-43ff-8aa1-b7a23c4c21ec",
+              "title": "Paramount Plus",
+              "hideTitle": false,
+              "imageAspect": "wide",
+              "dataSources": [
+                {
+                  "kind": "addonCatalog",
+                  "payload": {
+                    "addonId": "https://aiometadatafortheweebs.midnightignite.me/stremio/3ab2d1a2-e850-424a-b855-40829231f1f4/manifest.json",
+                    "catalogId": "movie::tmdb.discover.movie.streaming_paramount_plus_531_6.mu2woofc",
+                    "type": "movie",
+                    "aiometadata": {
+                      "version": 1,
+                      "catalog": {
+                        "id": "tmdb.discover.movie.streaming_paramount_plus_531_6.mu2woofc",
+                        "type": "movie",
+                        "name": "Paramount Plus",
+                        "source": "tmdb",
+                        "enabled": true,
+                        "showInHome": true,
+                        "metadata": {
+                          "discover": {
+                            "version": 2,
+                            "source": "tmdb",
+                            "mediaType": "movie",
+                            "params": {
+                              "sort_by": "popularity.desc",
+                              "include_adult": false,
+                              "watch_region": "IT",
+                              "with_watch_providers": "531",
+                              "with_watch_monetization_types": "flatrate|free|ads|rent|buy",
+                              "vote_count.gte": 10,
+                              "primary_release_date.gte": "__tmdb_date__:last_10_years:from",
+                              "primary_release_date.lte": "__tmdb_date__:last_10_years:to",
+                              "with_release_type": "4|5|6",
+                              "release_date.lte": "__tmdb_date__:today:to"
+                            },
+                            "formState": {
+                              "catalogName": "Paramount Plus",
+                              "discoverSource": "tmdb",
+                              "catalogType": "movie",
+                              "tmdbMediaType": "movie",
+                              "sortBy": "popularity.desc",
+                              "includeAdult": false,
+                              "releasedOnly": true,
+                              "watchRegion": "IT",
+                              "watchProviders": [
+                                {
+                                  "id": 531,
+                                  "label": "Paramount Plus"
+                                }
+                              ],
+                              "providerJoinMode": "or",
+                              "voteCountMin": 10,
+                              "primaryReleaseFrom": "2016-09-15",
+                              "primaryReleaseTo": "2026-09-15",
+                              "movieDatePreset": "last_10_years"
+                            }
+                          },
+                          "description": "TMDB Discover (movie)",
+                          "url": "https://www.themoviedb.org/discover/movie?sort_by=popularity.desc&include_adult=false&watch_region=IT&with_watch_providers=531&with_watch_monetization_types=flatrate%7Cfree%7Cads%7Crent%7Cbuy&vote_count.gte=10&primary_release_date.gte=2016-09-15&primary_release_date.lte=2026-09-15&with_release_type=4%7C5%7C6&release_date.lte=2026-09-15"
+                        }
+                      }
+                    }
+                  }
+                },
+                {
+                  "kind": "addonCatalog",
+                  "payload": {
+                    "addonId": "https://aiometadatafortheweebs.midnightignite.me/stremio/3ab2d1a2-e850-424a-b855-40829231f1f4/manifest.json",
+                    "catalogId": "series::tmdb.discover.series.streaming_paramount_plus_531_6.mu2woofc",
+                    "type": "series",
+                    "aiometadata": {
+                      "version": 1,
+                      "catalog": {
+                        "id": "tmdb.discover.series.streaming_paramount_plus_531_6.mu2woofc",
+                        "type": "series",
+                        "name": "Paramount Plus",
+                        "source": "tmdb",
+                        "enabled": true,
+                        "showInHome": true,
+                        "metadata": {
+                          "discover": {
+                            "version": 2,
+                            "source": "tmdb",
+                            "mediaType": "tv",
+                            "params": {
+                              "sort_by": "popularity.desc",
+                              "include_adult": false,
+                              "watch_region": "IT",
+                              "with_watch_providers": "531",
+                              "with_watch_monetization_types": "flatrate|free|ads|rent|buy",
+                              "vote_count.gte": 10,
+                              "first_air_date.gte": "__tmdb_date__:last_10_years:from",
+                              "first_air_date.lte": "__tmdb_date__:last_10_years:to",
+                              "with_status": "0|3|4|5"
+                            },
+                            "formState": {
+                              "catalogName": "Paramount Plus",
+                              "discoverSource": "tmdb",
+                              "catalogType": "series",
+                              "tmdbMediaType": "tv",
+                              "sortBy": "popularity.desc",
+                              "includeAdult": false,
+                              "releasedOnly": true,
+                              "watchRegion": "IT",
+                              "watchProviders": [
+                                {
+                                  "id": 531,
+                                  "label": "Paramount Plus"
+                                }
+                              ],
+                              "providerJoinMode": "or",
+                              "voteCountMin": 10,
+                              "firstAirFrom": "2016-09-15",
+                              "firstAirTo": "2026-09-15",
+                              "seriesDatePreset": "last_10_years"
+                            }
+                          },
+                          "description": "TMDB Discover (tv)",
+                          "url": "https://www.themoviedb.org/discover/tv?sort_by=popularity.desc&include_adult=false&watch_region=IT&with_watch_providers=531&with_watch_monetization_types=flatrate%7Cfree%7Cads%7Crent%7Cbuy&vote_count.gte=10&first_air_date.gte=2016-09-15&first_air_date.lte=2026-09-15&with_status=0%7C3%7C4%7C5"
+                        }
+                      }
+                    }
+                  }
+                }
+              ],
+              "imageURL": "https://raw.githubusercontent.com/Patroz1/fusion-custom/main/Paramount-Plus-wide.png?v=2"
+            },
+            {
+              "id": "e3815a48-ba51-4dbb-b3aa-6bc0f45b3de0",
+              "title": "Discovery+",
+              "hideTitle": false,
+              "imageAspect": "wide",
+              "dataSources": [
+                {
+                  "kind": "addonCatalog",
+                  "payload": {
+                    "addonId": "https://aiometadatafortheweebs.midnightignite.me/stremio/3ab2d1a2-e850-424a-b855-40829231f1f4/manifest.json",
+                    "catalogId": "movie::tmdb.discover.movie.streaming_discovery_amazon_channel_584_7.mu2woofc",
+                    "type": "movie",
+                    "aiometadata": {
+                      "version": 1,
+                      "catalog": {
+                        "id": "tmdb.discover.movie.streaming_discovery_amazon_channel_584_7.mu2woofc",
+                        "type": "movie",
+                        "name": "Discovery+ Amazon Channel",
+                        "source": "tmdb",
+                        "enabled": true,
+                        "showInHome": true,
+                        "metadata": {
+                          "discover": {
+                            "version": 2,
+                            "source": "tmdb",
+                            "mediaType": "movie",
+                            "params": {
+                              "sort_by": "popularity.desc",
+                              "include_adult": false,
+                              "watch_region": "IT",
+                              "with_watch_providers": "584",
+                              "with_watch_monetization_types": "flatrate|free|ads|rent|buy",
+                              "vote_count.gte": 10,
+                              "primary_release_date.gte": "__tmdb_date__:last_10_years:from",
+                              "primary_release_date.lte": "__tmdb_date__:last_10_years:to",
+                              "with_release_type": "4|5|6",
+                              "release_date.lte": "__tmdb_date__:today:to"
+                            },
+                            "formState": {
+                              "catalogName": "Discovery+ Amazon Channel",
+                              "discoverSource": "tmdb",
+                              "catalogType": "movie",
+                              "tmdbMediaType": "movie",
+                              "sortBy": "popularity.desc",
+                              "includeAdult": false,
+                              "releasedOnly": true,
+                              "watchRegion": "IT",
+                              "watchProviders": [
+                                {
+                                  "id": 584,
+                                  "label": "Discovery+ Amazon Channel"
+                                }
+                              ],
+                              "providerJoinMode": "or",
+                              "voteCountMin": 10,
+                              "primaryReleaseFrom": "2016-09-15",
+                              "primaryReleaseTo": "2026-09-15",
+                              "movieDatePreset": "last_10_years"
+                            }
+                          },
+                          "description": "TMDB Discover (movie)",
+                          "url": "https://www.themoviedb.org/discover/movie?sort_by=popularity.desc&include_adult=false&watch_region=IT&with_watch_providers=584&with_watch_monetization_types=flatrate%7Cfree%7Cads%7Crent%7Cbuy&vote_count.gte=10&primary_release_date.gte=2016-09-15&primary_release_date.lte=2026-09-15&with_release_type=4%7C5%7C6&release_date.lte=2026-09-15"
+                        }
+                      }
+                    }
+                  }
+                },
+                {
+                  "kind": "addonCatalog",
+                  "payload": {
+                    "addonId": "https://aiometadatafortheweebs.midnightignite.me/stremio/3ab2d1a2-e850-424a-b855-40829231f1f4/manifest.json",
+                    "catalogId": "series::tmdb.discover.series.streaming_discovery_amazon_channel_584_7.mu2woofc",
+                    "type": "series",
+                    "aiometadata": {
+                      "version": 1,
+                      "catalog": {
+                        "id": "tmdb.discover.series.streaming_discovery_amazon_channel_584_7.mu2woofc",
+                        "type": "series",
+                        "name": "Discovery+ Amazon Channel",
+                        "source": "tmdb",
+                        "enabled": true,
+                        "showInHome": true,
+                        "metadata": {
+                          "discover": {
+                            "version": 2,
+                            "source": "tmdb",
+                            "mediaType": "tv",
+                            "params": {
+                              "sort_by": "popularity.desc",
+                              "include_adult": false,
+                              "watch_region": "IT",
+                              "with_watch_providers": "584",
+                              "with_watch_monetization_types": "flatrate|free|ads|rent|buy",
+                              "vote_count.gte": 10,
+                              "first_air_date.gte": "__tmdb_date__:last_10_years:from",
+                              "first_air_date.lte": "__tmdb_date__:last_10_years:to",
+                              "with_status": "0|3|4|5"
+                            },
+                            "formState": {
+                              "catalogName": "Discovery+ Amazon Channel",
+                              "discoverSource": "tmdb",
+                              "catalogType": "series",
+                              "tmdbMediaType": "tv",
+                              "sortBy": "popularity.desc",
+                              "includeAdult": false,
+                              "releasedOnly": true,
+                              "watchRegion": "IT",
+                              "watchProviders": [
+                                {
+                                  "id": 584,
+                                  "label": "Discovery+ Amazon Channel"
+                                }
+                              ],
+                              "providerJoinMode": "or",
+                              "voteCountMin": 10,
+                              "firstAirFrom": "2016-09-15",
+                              "firstAirTo": "2026-09-15",
+                              "seriesDatePreset": "last_10_years"
+                            }
+                          },
+                          "description": "TMDB Discover (tv)",
+                          "url": "https://www.themoviedb.org/discover/tv?sort_by=popularity.desc&include_adult=false&watch_region=IT&with_watch_providers=584&with_watch_monetization_types=flatrate%7Cfree%7Cads%7Crent%7Cbuy&vote_count.gte=10&first_air_date.gte=2016-09-15&first_air_date.lte=2026-09-15&with_status=0%7C3%7C4%7C5"
+                        }
+                      }
+                    }
+                  }
+                }
+              ],
+              "imageURL": "https://raw.githubusercontent.com/Patroz1/fusion-custom/main/Discovery+-wide.png?v=2"
+            },
+            {
+              "id": "85b91389-1d94-4ae0-9edc-9273d7e87865",
+              "title": "Now TV",
+              "hideTitle": false,
+              "imageAspect": "wide",
+              "dataSources": [
+                {
+                  "kind": "addonCatalog",
+                  "payload": {
+                    "addonId": "https://aiometadatafortheweebs.midnightignite.me/stremio/3ab2d1a2-e850-424a-b855-40829231f1f4/manifest.json",
+                    "catalogId": "movie::tmdb.discover.movie.streaming_now_tv_39_8.mu2woofc",
+                    "type": "movie",
+                    "aiometadata": {
+                      "version": 1,
+                      "catalog": {
+                        "id": "tmdb.discover.movie.streaming_now_tv_39_8.mu2woofc",
+                        "type": "movie",
+                        "name": "Now TV",
+                        "source": "tmdb",
+                        "enabled": true,
+                        "showInHome": true,
+                        "metadata": {
+                          "discover": {
+                            "version": 2,
+                            "source": "tmdb",
+                            "mediaType": "movie",
+                            "params": {
+                              "sort_by": "popularity.desc",
+                              "include_adult": false,
+                              "watch_region": "IT",
+                              "with_watch_providers": "39",
+                              "with_watch_monetization_types": "flatrate|free|ads|rent|buy",
+                              "vote_count.gte": 10,
+                              "primary_release_date.gte": "__tmdb_date__:last_10_years:from",
+                              "primary_release_date.lte": "__tmdb_date__:last_10_years:to",
+                              "with_release_type": "4|5|6",
+                              "release_date.lte": "__tmdb_date__:today:to"
+                            },
+                            "formState": {
+                              "catalogName": "Now TV",
+                              "discoverSource": "tmdb",
+                              "catalogType": "movie",
+                              "tmdbMediaType": "movie",
+                              "sortBy": "popularity.desc",
+                              "includeAdult": false,
+                              "releasedOnly": true,
+                              "watchRegion": "IT",
+                              "watchProviders": [
+                                {
+                                  "id": 39,
+                                  "label": "Now TV"
+                                }
+                              ],
+                              "providerJoinMode": "or",
+                              "voteCountMin": 10,
+                              "primaryReleaseFrom": "2016-09-15",
+                              "primaryReleaseTo": "2026-09-15",
+                              "movieDatePreset": "last_10_years"
+                            }
+                          },
+                          "description": "TMDB Discover (movie)",
+                          "url": "https://www.themoviedb.org/discover/movie?sort_by=popularity.desc&include_adult=false&watch_region=IT&with_watch_providers=39&with_watch_monetization_types=flatrate%7Cfree%7Cads%7Crent%7Cbuy&vote_count.gte=10&primary_release_date.gte=2016-09-15&primary_release_date.lte=2026-09-15&with_release_type=4%7C5%7C6&release_date.lte=2026-09-15"
+                        }
+                      }
+                    }
+                  }
+                },
+                {
+                  "kind": "addonCatalog",
+                  "payload": {
+                    "addonId": "https://aiometadatafortheweebs.midnightignite.me/stremio/3ab2d1a2-e850-424a-b855-40829231f1f4/manifest.json",
+                    "catalogId": "series::tmdb.discover.series.streaming_now_tv_39_8.mu2woofc",
+                    "type": "series",
+                    "aiometadata": {
+                      "version": 1,
+                      "catalog": {
+                        "id": "tmdb.discover.series.streaming_now_tv_39_8.mu2woofc",
+                        "type": "series",
+                        "name": "Now TV",
+                        "source": "tmdb",
+                        "enabled": true,
+                        "showInHome": true,
+                        "metadata": {
+                          "discover": {
+                            "version": 2,
+                            "source": "tmdb",
+                            "mediaType": "tv",
+                            "params": {
+                              "sort_by": "popularity.desc",
+                              "include_adult": false,
+                              "watch_region": "IT",
+                              "with_watch_providers": "39",
+                              "with_watch_monetization_types": "flatrate|free|ads|rent|buy",
+                              "vote_count.gte": 10,
+                              "first_air_date.gte": "__tmdb_date__:last_10_years:from",
+                              "first_air_date.lte": "__tmdb_date__:last_10_years:to",
+                              "with_status": "0|3|4|5"
+                            },
+                            "formState": {
+                              "catalogName": "Now TV",
+                              "discoverSource": "tmdb",
+                              "catalogType": "series",
+                              "tmdbMediaType": "tv",
+                              "sortBy": "popularity.desc",
+                              "includeAdult": false,
+                              "releasedOnly": true,
+                              "watchRegion": "IT",
+                              "watchProviders": [
+                                {
+                                  "id": 39,
+                                  "label": "Now TV"
+                                }
+                              ],
+                              "providerJoinMode": "or",
+                              "voteCountMin": 10,
+                              "firstAirFrom": "2016-09-15",
+                              "firstAirTo": "2026-09-15",
+                              "seriesDatePreset": "last_10_years"
+                            }
+                          },
+                          "description": "TMDB Discover (tv)",
+                          "url": "https://www.themoviedb.org/discover/tv?sort_by=popularity.desc&include_adult=false&watch_region=IT&with_watch_providers=39&with_watch_monetization_types=flatrate%7Cfree%7Cads%7Crent%7Cbuy&vote_count.gte=10&first_air_date.gte=2016-09-15&first_air_date.lte=2026-09-15&with_status=0%7C3%7C4%7C5"
+                        }
+                      }
+                    }
+                  }
+                }
+              ],
+              "imageURL": "https://raw.githubusercontent.com/Patroz1/fusion-custom/main/Now-TV-wide.png?v=2"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
